@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imagem e Texto</title>
+	<style>
+        .container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.imagem {
+	flex: 0 0 50%;
+	max-width: 50%;
+	order: 1;
+}
+
+.imagem img {
+	width: 100%;
+	height: auto;
+}
+
+.texto {
+	flex: 1;
+	padding: 20px;
+	order: 2;
+}
+
+@media (max-width: 768px) {
+	.imagem {
+		flex-basis: 100%;
+		max-width: 100%;
+		order: 2;
+	}
+
+	.texto {
+		order: 1;
+	}
+}
+
+    </style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="imagem">
+			<img src="img/pc9.png">
+		</div>
+		<div class="texto">
+			<h1>Título do Texto</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu lorem nec velit pharetra molestie. Integer sed lectus tristique, tempor mi eu, luctus nisi. Aliquam quis sapien diam. Praesent semper dignissim nibh sit amet hendrerit. Nam at pulvinar magna. Duis non finibus sapien. Donec tempor massa nec urna lobortis, eu auctor velit tristique. Aenean quis consequat neque. Vestibulum eleifend libero nec urna aliquam, nec malesuada enim eleifend. Etiam eu leo at sapien viverra accumsan. Suspendisse ultricies elit id turpis faucibus, id convallis urna suscipit. Nullam at aliquet orci. Donec fermentum tortor vel turpis dictum, eu congue orci finibus.</p>
+		</div>
+	</div>
+</body>
+</html>
